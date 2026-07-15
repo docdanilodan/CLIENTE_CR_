@@ -1,0 +1,20 @@
+ANALISI CR VALUE 2.3 - AVVIO SU WINDOWS
+
+1. Mettere nella stessa cartella:
+   - Analisi_CR_VALUE_2_3_STABILE.py
+   - AVVIA_ANALISI_CR_VALUE_2_3.bat
+   - requirements.txt
+
+2. Fare doppio clic su AVVIA_ANALISI_CR_VALUE_2_3.bat.
+
+3. Al primo avvio vengono installati i componenti Python.
+
+4. Il programma si apre nel browser all'indirizzo:
+   http://localhost:8501
+
+OCR PDF SCANSITI
+Per leggere scansioni e immagini installare Tesseract OCR per Windows.
+Il programma funziona anche senza OCR, ma i documenti solo immagine verranno archiviati senza estrazione automatica.
+
+CORREZIONE VERSIONE 2.3
+La navigazione non modifica piu direttamente st.session_state.nav_page dopo la creazione del widget Streamlit. Il cambio pagina viene accodato e applicato prima della creazione del menu laterale, eliminando StreamlitAPIException.
